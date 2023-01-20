@@ -21,7 +21,7 @@ public class Patologia {
 	@Column(name="id")
 	private int id;
 	
-	@Column(name="data")
+	@Column(name="data_scoperta")
 	@CreationTimestamp
 	private Date data;
 	

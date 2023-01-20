@@ -83,14 +83,14 @@ public class Patologia {
 
 
 
-	public int getId_animale() {
-		return id_animale;
+	public int getIdentificativo() {
+		return identificativo;
 	}
 
 
 
-	public void setId_animale(int id_animale) {
-		this.id_animale = id_animale;
+	public void setIdentificativo(int identificativo) {
+		this.identificativo = identificativo;
 	}
 
 

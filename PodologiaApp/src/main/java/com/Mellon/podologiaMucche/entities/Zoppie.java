@@ -1,5 +1,4 @@
-package com.podology.entities;
-
+package com.Mellon.podologiaMucche.entities;
 import java.sql.Date;
 
 import org.hibernate.annotations.CreationTimestamp;

@@ -8,11 +8,11 @@
 		<version>3.0.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.podology</groupId>
-	<artifactId>podology</artifactId>
+	<groupId>com.Mellon</groupId>
+	<artifactId>podologiaMucche</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>PodologiaMucca</name>
-	<description>Podologia Mucche</description>
+	<name>PodologiaApp</name>
+	<description>Podologia Mucche per Gigi</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -27,7 +27,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter-web-services</artifactId>
 		</dependency>
 
 		<dependency>

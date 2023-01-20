@@ -1,13 +1,13 @@
-package com.podology;
+package com.Mellon.podologiaMucche;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PodologiaMuccaApplication {
+public class PodologiaAppApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PodologiaMuccaApplication.class, args);
+		SpringApplication.run(PodologiaAppApplication.class, args);
 	}
 
 }

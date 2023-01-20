@@ -1,4 +1,4 @@
-package com.podology.entities;
+package com.Mellon.podologiaMucche.entities;
 
 import java.sql.Date;
 

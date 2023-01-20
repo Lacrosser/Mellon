@@ -15,8 +15,8 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="mucche")
-public class Mucca {
+@Table(name="animali")
+public class Animale {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,57 +36,79 @@ public class Mucca {
 	private Date ultimo_pareggio;
 	
 	@JsonIgnore
-	@OneToMany(mappedBy = "muccaId")
-	private Set<Zoppia> zoppie=new HashSet<Zoppia>();
+	@OneToMany(mappedBy = "animaleId")
+	private Set<Patologia> patologia=new HashSet<Patologia>();
 	
 	
 	//Costruttore
 	
-	public Mucca() {
+	public Animale() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	//Getters & setter
-	
+
+
 	public int getId() {
 		return id;
 	}
+
 
 	public void setId(int id) {
 		this.id = id;
 	}
 
+
 	public String getOrecchino() {
 		return orecchino;
 	}
+
 
 	public void setOrecchino(String orecchino) {
 		this.orecchino = orecchino;
 	}
 
+
 	public Date getData_nascita() {
 		return data_nascita;
 	}
+
 
 	public void setData_nascita(Date data_nascita) {
 		this.data_nascita = data_nascita;
 	}
 
+
 	public int getId_animale() {
 		return id_animale;
 	}
+
 
 	public void setId_animale(int id_animale) {
 		this.id_animale = id_animale;
 	}
 
+
 	public Date getUltimo_pareggio() {
 		return ultimo_pareggio;
 	}
 
+
 	public void setUltimo_pareggio(Date ultimo_pareggio) {
 		this.ultimo_pareggio = ultimo_pareggio;
 	}
+
+
+	public Set<Patologia> getPatologia() {
+		return patologia;
+	}
+
+
+	public void setPatologia(Set<Patologia> patologia) {
+		this.patologia = patologia;
+	}
+	
+	//Getters & setter
+	
+	
 	
 	
 	

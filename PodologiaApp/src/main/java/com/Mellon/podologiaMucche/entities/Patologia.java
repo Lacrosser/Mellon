@@ -13,8 +13,8 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="zoppie")
-public class Zoppia {
+@Table(name="patologie")
+public class Patologia {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -44,74 +44,116 @@ public class Zoppia {
 	
 	
 	@ManyToOne(optional = false)
-	@JoinColumn(name = "mucche_id")
-	private Mucca muccaId;
+	@JoinColumn(name = "animali_id")
+	private Animale animaleId;
 	
 	
 
 	//Costruttore
 	
-	public Zoppia() {
+	public Patologia() {
 		
 	}
-	
-	//getters & setters
+
+
 
 	public int getId() {
 		return id;
 	}
 
+
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
+
 
 	public Date getData() {
 		return data;
 	}
 
+
+
 	public void setData(Date data) {
 		this.data = data;
 	}
+
+
 
 	public int getId_animale() {
 		return id_animale;
 	}
 
+
+
 	public void setId_animale(int id_animale) {
 		this.id_animale = id_animale;
 	}
+
+
 
 	public String getMedicazione() {
 		return medicazione;
 	}
 
+
+
 	public void setMedicazione(String medicazione) {
 		this.medicazione = medicazione;
 	}
+
+
 
 	public String getPatologia() {
 		return patologia;
 	}
 
+
+
 	public void setPatologia(String patologia) {
 		this.patologia = patologia;
 	}
+
+
 
 	public String getPosizione() {
 		return posizione;
 	}
 
+
+
 	public void setPosizione(String posizione) {
 		this.posizione = posizione;
 	}
+
+
 
 	public String getRivisita() {
 		return rivisita;
 	}
 
+
+
 	public void setRivisita(String rivisita) {
 		this.rivisita = rivisita;
 	}
+
+
+
+	public Animale getAnimaleId() {
+		return animaleId;
+	}
+
+
+
+	public void setAnimaleId(Animale animaleId) {
+		this.animaleId = animaleId;
+	}
+	
+	//getters & setters
+
+	
 	
 	
 	

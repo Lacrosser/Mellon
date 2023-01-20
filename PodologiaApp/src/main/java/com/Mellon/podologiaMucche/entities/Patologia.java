@@ -3,6 +3,8 @@ import java.sql.Date;
 
 import org.hibernate.annotations.CreationTimestamp;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -42,7 +44,7 @@ public class Patologia {
 	
 	
 	
-	
+	@JsonIgnore
 	@ManyToOne(optional = false)
 	@JoinColumn(name = "animali_id")
 	private Animale animaleId;
@@ -150,12 +152,7 @@ public class Patologia {
 	public void setAnimaleId(Animale animaleId) {
 		this.animaleId = animaleId;
 	}
-	
-	//getters & setters
 
-	
-	
-	
-	
+
 	
 }

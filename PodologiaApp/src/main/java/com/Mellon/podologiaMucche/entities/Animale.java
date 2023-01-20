@@ -11,6 +11,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
@@ -35,9 +37,15 @@ public class Animale {
 	@Column(name="ultimo_pareggio")
 	private Date ultimo_pareggio;
 	
-	@JsonIgnore
+	
 	@OneToMany(mappedBy = "animaleId")
 	private Set<Patologia> patologia=new HashSet<Patologia>();
+	
+	
+	@JsonIgnore
+	@ManyToOne(optional = false)
+	@JoinColumn(name="aziende_id")
+	private Azienda aziendaId;
 	
 	
 	//Costruttore
@@ -105,12 +113,18 @@ public class Animale {
 	public void setPatologia(Set<Patologia> patologia) {
 		this.patologia = patologia;
 	}
-	
-	//Getters & setter
-	
-	
-	
-	
+
+
+	public Azienda getAziendaId() {
+		return aziendaId;
+	}
+
+
+	public void setAziendaId(Azienda aziendaId) {
+		this.aziendaId = aziendaId;
+	}
+
+
 	
 	
 }

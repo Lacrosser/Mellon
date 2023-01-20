@@ -67,7 +67,7 @@ public class AnimaliRest {
 		
 		s.setAziendaId(u.getAziendaId());
 		s.setData_nascita(u.getData_nascita());
-		s.setId_animale(u.getId_animale());
+		s.setIdentificativo(u.getIdentificativo());
 		s.setOrecchino(u.getOrecchino());
 		s.setPatologia(u.getPatologia());
 		s.setUltimo_pareggio(u.getUltimo_pareggio());

@@ -31,8 +31,8 @@ public class Animale {
 	@Column(name="data_nascita")
 	private Date data_nascita;
 	
-	@Column(name="id_animale")
-	private int id_animale;
+	@Column(name="identificativo")
+	private int identificativo;
 	
 	@Column(name="ultimo_pareggio")
 	private Date ultimo_pareggio;
@@ -85,13 +85,13 @@ public class Animale {
 	}
 
 
-	public int getId_animale() {
-		return id_animale;
+	public int getIdentificativo() {
+		return identificativo;
 	}
 
 
-	public void setId_animale(int id_animale) {
-		this.id_animale = id_animale;
+	public void setIdentificativo(int identificativo) {
+		this.identificativo = identificativo;
 	}
 
 
@@ -124,6 +124,8 @@ public class Animale {
 		this.aziendaId = aziendaId;
 	}
 
+
+	
 
 	
 	

@@ -27,8 +27,8 @@ public class Patologia {
 	@CreationTimestamp
 	private Date data;
 	
-	@Column(name="id_animale")
-	private int id_animale;
+	@Column(name="identificativo")
+	private int identificativo;
 	
 	@Column(name="medicazione")
 	private String medicazione;

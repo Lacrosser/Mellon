@@ -1,17 +1,22 @@
 package com.Mellon.podologiaMucche.entities;
 
 import java.sql.Date;
+import java.util.HashSet;
+import java.util.Set;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="vacche")
-public class Mucche {
+@Table(name="mucche")
+public class Mucca {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,10 +35,15 @@ public class Mucche {
 	@Column(name="ultimo_pareggio")
 	private Date ultimo_pareggio;
 	
+	@JsonIgnore
+	@OneToMany(mappedBy = "muccaId")
+	private Set<Zoppia> zoppie=new HashSet<Zoppia>();
+	
+	
 	//Costruttore
 	
-	public Mucche() {
-		
+	public Mucca() {
+		// TODO Auto-generated constructor stub
 	}
 	
 	//Getters & setter

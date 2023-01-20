@@ -2,6 +2,8 @@ package com.Mellon.podologiaMucche.repo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ZoppieDao extends JpaRepository<ZoppieDao, Integer> {
+import com.Mellon.podologiaMucche.entities.Zoppia;
+
+public interface ZoppieDao extends JpaRepository<Zoppia, Integer> {
 
 }

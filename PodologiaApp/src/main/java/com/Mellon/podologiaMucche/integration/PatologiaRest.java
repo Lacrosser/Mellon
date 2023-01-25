@@ -69,7 +69,7 @@ public class PatologiaRest {
 		
 		s.setData(u.getData());
 		s.setAnimaleId(u.getAnimaleId());
-		s.setId_animale(u.getId_animale());
+		s.setIdentificativo(u.getIdentificativo());
 		s.setMedicazione(u.getMedicazione());
 		s.setPatologia(u.getPatologia());
 		s.setPosizione(u.getPosizione());

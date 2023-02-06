@@ -1,9 +1,13 @@
-body{
+*{
     font-family: 'EB Garamond', serif;
 }
 
+body{
+    background-color: blue;
+}
+
 .title{
-    font-family: 'EB Garamond', serif;
+    /* font-family: 'EB Garamond', serif; */
     font-size: 3rem;
     line-height: normal;
     
@@ -41,7 +45,7 @@ body{
 }
 
 .btnText1{
-    font-family: 'EB Garamond', serif;
+    /* font-family: 'EB Garamond', serif; */
     font-size: 1.6rem;
     position: relative; 
     left: -12px;
@@ -53,7 +57,7 @@ body{
 }
 
 .btnText2{
-    font-family: 'EB Garamond', serif;
+    /* font-family: 'EB Garamond', serif; */
     font-size: 1.6rem;
     position: relative; 
     left: -24px;
@@ -65,7 +69,7 @@ body{
 }
 
 .btnText3{
-    font-family: 'EB Garamond', serif;
+    /* font-family: 'EB Garamond', serif; */
     font-size: 1.6rem;
     position: relative; 
     left: -24px;
